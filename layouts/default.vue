@@ -14,7 +14,7 @@
                 i.mdi.mdi-flask.mdi-24px
             span experiments
         
-        nuxt-link(active-class="is-active" to="/useful_links/" exact).navbar-item 
+        nuxt-link(active-class="is-active" to="/useful-links/" exact).navbar-item 
             span.icon.is-large
                 i.mdi.mdi-link-variant.mdi-24px
             span useful links

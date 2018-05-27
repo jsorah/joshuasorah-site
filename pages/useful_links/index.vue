@@ -12,6 +12,8 @@
                     .card-content
                         ul
                             li(v-for="link in linkCategory.links")                            
+                                span.icon
+                                    i.mdi.mdi-link-variant
                                 a(:href="link.url") {{link.name}}                                
                                     //- small {{link.description}}
 </template>
@@ -39,7 +41,14 @@ export default {
                     ]
                 },
                 {
-                    name: "Place Holder",
+                    name: "Radio",
+                    links: [
+                        { 
+                                url: "https://hamstudy.org/",
+                                name: "Ham Study",
+                                description: "Excellent study tools for getting your ham radio license "
+                        }                        
+                    ]
                 }
             ]
         }

@@ -4,6 +4,7 @@
     "dev": "nuxt"
   },
   "dependencies": {
+    "@mdi/font": "^2.4.85",
     "bulma": "^0.7.1",
     "nuxt": "^1.4.0"
   },

@@ -4,11 +4,11 @@
     nav.navbar.is-primary
       .navbar-brand
         
-        nuxt-link(to="/").navbar-item home
+        nuxt-link(active-class="is-active" to="/" exact).navbar-item home
         
-        nuxt-link(to="/experiments/").navbar-item experiments
+        nuxt-link(active-class="is-active" to="/experiments/" exact).navbar-item experiments
 
-        nuxt-link(to="/useful_links/").navbar-item useful links
+        nuxt-link(active-class="is-active" to="/useful_links/" exact).navbar-item useful links
 
     #wrapper
         nuxt

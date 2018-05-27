@@ -22,7 +22,7 @@
     #wrapper
         nuxt
 
-    section.hero.footer.is-dark
-      p.is-dark This is my footer.  There are many like it, but this one is mine.
+    //- section.hero.footer.is-dark
+    //-   p.is-dark This is my footer.  There are many like it, but this one is mine.
 
 </template>

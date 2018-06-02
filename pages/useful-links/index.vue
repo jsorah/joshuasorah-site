@@ -26,6 +26,21 @@ export default {
         return { 
             linkCategories: [
                 {
+                    name: "Programming",
+                    links: [
+                        { 
+                                url: "https://github.com/",
+                                name: "GitHub",
+                                description: "git Hosting - free public repos, limited private repos"
+                        },
+                        { 
+                                url: "https://bitbucket.org/",
+                                name: "Atlassian Bitbucket",
+                                description: "git Hosting - free private repos"
+                        }
+                    ]
+                },
+                {
                     name: "Security",
                     links: [
                         { 

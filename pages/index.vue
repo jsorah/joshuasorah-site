@@ -19,19 +19,42 @@
                     .card
                         header.card-header.has-background-grey
                             h1.card-header-title.has-text-white Technologies
-                        header.card-header
-                            .card-content
-                                .tags
-                                    span(:class="whichClass('database')").tag Databases
-                                    span(:class="whichClass('framework')").tag Frameworks
-                                    span(:class="whichClass('os')").tag Operating Systems
-                                    span(:class="whichClass('language')").tag.is-info Programming Language                                    
-                                    span(:class="whichClass('tool')").tag Tools                                    
-                                    
-                                    span(:class="whichClass('other')").tag Everything Else
                         .card-content
-                            .tags
-                                span(v-for="skill in skills" :class="whichClass(skill.type)").tag {{skill.name}}                                
+                            .tile.is-ancestor                        
+                                .tile
+                                    .panel.is-primary
+                                        h2.panel-heading.has-background-success.has-text-white Programming Languages
+                                        .panel-block
+                                            .tags
+                                                span(v-for="skill in filterLanguage('language')" :class="whichClass(skill.type)").tag {{skill.name}}
+                                .tile
+                                    .panel
+                                        h2.panel-heading.has-background-danger.has-text-white Databases
+                                        .panel-block
+                                            .tags
+                                                span(v-for="skill in filterLanguage('database')" :class="whichClass(skill.type)").tag {{skill.name}}
+                                .tile
+                                    .panel
+                                        h2.panel-heading.has-background-primary.has-text-white Frameworks
+                                        .panel-block
+                                            .tags                                
+                                                span(v-for="skill in filterLanguage('framework')" :class="whichClass(skill.type)").tag {{skill.name}}
+                                .tile                                
+                                    .panel
+                                        h2.panel-heading.has-background-info.has-text-white Operating Systems
+                                        .panel-block
+                                            .tags
+                                                span(v-for="skill in filterLanguage('os')" :class="whichClass(skill.type)").tag {{skill.name}}
+                                .tile                                
+                                    .panel
+                                        h2.panel-heading.has-background-warning Tools
+                                        .panel-block
+                                            .tags
+                                                span(v-for="skill in filterLanguage('tool')" :class="whichClass(skill.type)").tag {{skill.name}}
+            section.section
+                .container
+                    
+                                        
 
 </template>
 
@@ -64,6 +87,9 @@ export default {
 
             }
 
+        },
+        filterLanguage: function(filter) {            
+            return this.skills.filter( thing => thing.type === filter);
         }
     },
     asyncData ( context ) {
@@ -95,15 +121,15 @@ export default {
                 },
                 {
                     name: "git",
-                    type: "version-control"
+                    type: "tool"
                 },
                 {
                     name: "cvs",
-                    type: "version-control"
+                    type: "tool"
                 },
                 {
                     name: "svn",
-                    type: "version-control"
+                    type: "tool"
                 },
                 {
                     name: "bash",
@@ -162,6 +188,10 @@ export default {
                     type: "framework"
                 },
                 {
+                    name: "jQuery",
+                    type: "framework"
+                },
+                {
                     name: "Javascript",
                     type: "language"
                 },
@@ -209,6 +239,10 @@ export default {
                     name: "ACORD Standard XML",
                     type: "framework"
                 },
+                {
+                    name: "SoapUI",
+                    type: "tool"
+                }
 
             ]
         }

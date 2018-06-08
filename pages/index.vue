@@ -20,33 +20,30 @@
                         header.card-header.has-background-grey
                             h1.card-header-title.has-text-white Technologies
                         .card-content
-                            .tile.is-ancestor                        
-                                .tile
-                                    .panel.is-primary
+                            .tile.is-ancestor.is-vertical
+                                .tile.is-parent
+                                    .tile.is-child.panel.section                                        
                                         h2.panel-heading.has-background-success.has-text-white Programming Languages
                                         .panel-block
                                             .tags
                                                 span(v-for="skill in filterLanguage('language')" :class="whichClass(skill.type)").tag {{skill.name}}
-                                .tile
-                                    .panel
+                                    .tile.is-child.panel.section                                
                                         h2.panel-heading.has-background-danger.has-text-white Databases
                                         .panel-block
                                             .tags
                                                 span(v-for="skill in filterLanguage('database')" :class="whichClass(skill.type)").tag {{skill.name}}
-                                .tile
-                                    .panel
-                                        h2.panel-heading.has-background-primary.has-text-white Frameworks
-                                        .panel-block
-                                            .tags                                
-                                                span(v-for="skill in filterLanguage('framework')" :class="whichClass(skill.type)").tag {{skill.name}}
-                                .tile                                
-                                    .panel
+                                    .tile.is-child.panel.section                                
                                         h2.panel-heading.has-background-info.has-text-white Operating Systems
                                         .panel-block
                                             .tags
-                                                span(v-for="skill in filterLanguage('os')" :class="whichClass(skill.type)").tag {{skill.name}}
-                                .tile                                
-                                    .panel
+                                                span(v-for="skill in filterLanguage('os')" :class="whichClass(skill.type)").tag {{skill.name}}                                    
+                                .tile.is-parent
+                                    .tile.is-child.panel.section
+                                        h2.panel-heading.has-background-primary.has-text-white Frameworks
+                                        .panel-block
+                                            .tags                                
+                                                span(v-for="skill in filterLanguage('framework')" :class="whichClass(skill.type)").tag {{skill.name}}                                    
+                                    .tile.is-child.panel.section
                                         h2.panel-heading.has-background-warning Tools
                                         .panel-block
                                             .tags
@@ -242,10 +239,20 @@ export default {
                 {
                     name: "SoapUI",
                     type: "tool"
+                },
+                {
+                    name: "C#",
+                    type: "language"
                 }
 
             ]
         }
+    },
+    head: {
+        meta: [
+            { charset: 'utf-8'}
+        ],
+        title: "Joshua Sorah"
     }
 }
 </script>

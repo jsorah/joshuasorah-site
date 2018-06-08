@@ -23,3 +23,14 @@
                             p Power meters are everywhere, and electric companies are getting #[strike lazier] smarter about how they read these things.  What you may not realize is that *anyone* can read the data they output, if they would only listen.
                             p Using the #[a(href="https://github.com/bemasher/rtlamr") rtlamr ] library, spending some time with golang and rtl-sdr, you can again get this data, very similar to the rtl_433 experiment I did.
 </template>
+
+<script>
+export default {    
+    head: {
+        meta: [
+            { charset: 'utf-8'}
+        ],
+        title: "Joshua Sorah - Experiments"
+    }
+}
+</script>

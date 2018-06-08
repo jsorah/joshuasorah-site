@@ -67,6 +67,12 @@ export default {
                 }
             ]
         }
+    },
+    head: {
+        meta: [
+            { charset: 'utf-8'}
+        ],
+        title: "Joshua Sorah - Useful Links"
     }
 }
 </script>

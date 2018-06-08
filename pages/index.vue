@@ -250,6 +250,11 @@ export default {
     },
     head: {
         meta: [
+            
+            { 
+                name: "google-site-verification",
+                content: "-OMMfp6Kf0_wEJGLLFfc_O6hBi9qIjrHMH3eiYqHp40"
+            },
             { charset: 'utf-8'}
         ],
         title: "Joshua Sorah"

@@ -77,3 +77,6 @@ typings/
 
 # Nuxt generate
 dist
+
+# hugo
+public

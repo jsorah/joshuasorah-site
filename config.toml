@@ -1,0 +1,17 @@
+baseURL = "https://joshuasorah.com/"
+languageCode = "en-us"
+title = "Joshua Sorah"
+theme = "ananke"
+
+MetaDataFormat = "yaml"
+SectionPagesMenu = "main"
+Paginate = 3
+googleAnalytics = ""
+enableRobotsTXT = true
+
+[params]
+  favicon = ""
+  description = "" 
+  background_color_class = "bg-black"
+  featured_image = ""
+  recent_posts_number = 2

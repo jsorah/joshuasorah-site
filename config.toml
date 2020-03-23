@@ -1,17 +1,78 @@
-baseURL = "https://www.joshuasorah.com/"
+baseURL = "https://www.joshuasorah.com"
 languageCode = "en-us"
+defaultContentLanguage = "en"
 title = "Joshua Sorah"
-theme = "ananke"
+theme = "cayman-hugo-theme"
 
-MetaDataFormat = "yaml"
-SectionPagesMenu = "main"
-Paginate = 3
-googleAnalytics = ""
-enableRobotsTXT = true
+# Google analytics
+# googleAnalytics = "UA-123456789-1"
+
+# Disqus comments
+# disqusShortname = "yourdiscussshortname"
+
+# Syntax highlighting
+pygmentsCodefences = true
+pygmentsStyle = "pygments"
+
+[taxonomies]
+  tag = "tags"
+
+[permalinks]
+  post = "/:filename/"
 
 [params]
-  favicon = ""
-  description = "" 
-  background_color_class = "bg-black"
-  featured_image = ""
-  recent_posts_number = 2
+  # Header text, can be markdown
+  project_name = "Joshua Sorah"
+  project_tagline = " "
+
+  # Date format for post list and single pages
+  # For more date formats see https://gohugo.io/functions/format/
+  dateFormat = "2006-01-02"
+
+  # Footer text, can be markdown
+  footer = "Made with [Hugo](https://gohugo.io/). Themed by [Cayman](https://github.com/zwbetz-gh/cayman-hugo-theme). Deployed to [Netlify](https://www.netlify.com/)."
+
+  # If true, the CSS/JS for Katex math typesetting are enabled
+  katex = true
+
+  # Breakpoints
+  large_breakpoint = "64em"
+  medium_breakpoint = "42em"
+
+# Dominant colors
+# #10070F black
+# #491233 dark purple
+# #223870 dark blue
+# #3291E1 light blue
+# #A8317B purple
+# #D0A4EA - pink
+
+  # Header colors
+  header_heading_color = "#fff"
+  header_background_color = "#491233"
+  header_background_color_secondary = "#223870"
+
+  # Text colors
+  section_headings_color = "#A8317B"
+  body_text_color = "#10070F"
+  body_link_color = "#C09A4DA"
+  blockquote_text_color = "#223870"
+
+  # Code colors
+  code_background_color = "#f3f6fa"
+  code_text_color = "#567482"
+
+  # Border colors
+  border_color = "#dce6f0"
+  table_border_color = "#e9ebec"
+  hr_border_color = "#eff0f1"
+
+[menu]
+  [[menu.nav]]
+    name = "Home"
+    url = "/"
+    weight = 1
+  [[menu.nav]]
+    name = "About"
+    url = "/about/"
+    weight = 2

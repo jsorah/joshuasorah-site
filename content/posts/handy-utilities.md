@@ -45,11 +45,11 @@ date: "2020-03-22"
 
 # Languages
 
-* python
+* [python](https://www.python.org)
   * Anaconda
-* Java
-  * sdkman
+* [Java](https://openjdk.java.net)
+  * [sdkman](https://sdkman.io)
 * JavaScript
   * nvm
-* Golang
+* [Golang](https://golang.org)
 

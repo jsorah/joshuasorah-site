@@ -1,6 +1,6 @@
 ---
 title: "Handy Utilities"
-date: "2020-03-22"
+date: "2021-03-23"
 ---
 
 # OS
@@ -13,7 +13,7 @@ date: "2020-03-22"
   * vim
 * Windows
   * [Scoop](https://scoop.sh)
-  * WSL
+  * WSL 2
   * Docker for Windows
 
 -----
@@ -49,6 +49,7 @@ date: "2020-03-22"
   * Anaconda
 * [Java](https://openjdk.java.net)
   * [sdkman](https://sdkman.io)
+  * [jenv](https://www.jenv.be)
 * JavaScript
   * nvm
 * [Golang](https://golang.org)

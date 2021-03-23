@@ -2,7 +2,7 @@ baseURL = "https://www.joshuasorah.com"
 languageCode = "en-us"
 defaultContentLanguage = "en"
 title = "Joshua Sorah"
-theme = "cayman-hugo-theme"
+theme = "terminal"
 
 # Google analytics
 # googleAnalytics = "UA-123456789-1"
@@ -21,58 +21,72 @@ pygmentsStyle = "pygments"
   post = "/:filename/"
 
 [params]
-  # Header text, can be markdown
-  project_name = "Joshua Sorah"
-  project_tagline = " "
+  # dir name of your main content (default is `content/posts`).
+  # the list of set content will show up on your index page (baseurl).
+  contentTypeName = "posts"
 
-  # Date format for post list and single pages
-  # For more date formats see https://gohugo.io/functions/format/
-  dateFormat = "2006-01-02"
+  # ["orange", "blue", "red", "green", "pink"]
+  themeColor = "green"
 
-  # Footer text, can be markdown
-  footer = "Made with [Hugo](https://gohugo.io/). Themed by [Cayman](https://github.com/zwbetz-gh/cayman-hugo-theme). Deployed to [Netlify](https://www.netlify.com/)."
+  # if you set this to 0, only submenu trigger will be visible
+  showMenuItems = 3
 
-  # If true, the CSS/JS for Katex math typesetting are enabled
-  katex = true
+  # show selector to switch language
+  showLanguageSelector = false
 
-  # Breakpoints
-  large_breakpoint = "64em"
-  medium_breakpoint = "42em"
+  # set theme to full screen width
+  fullWidthTheme = false
 
-# Dominant colors
-# #10070F black
-# #491233 dark purple
-# #223870 dark blue
-# #3291E1 light blue
-# #A8317B purple
-# #D0A4EA - pink
+  # center theme with default width
+  centerTheme = true
 
-  # Header colors
-  header_heading_color = "#fff"
-  header_background_color = "#491233"
-  header_background_color_secondary = "#223870"
+  # set a custom favicon (default is a `themeColor` square)
+  # favicon = "favicon.ico"
 
-  # Text colors
-  section_headings_color = "#A8317B"
-  body_text_color = "#10070F"
-  body_link_color = "#C09A4DA"
-  blockquote_text_color = "#223870"
+  # set post to show the last updated
+  # If you use git, you can set `enableGitInfo` to `true` and then post will automatically get the last updated
+  showLastUpdated = false
+  # Provide a string as a prefix for the last update date. By default, it looks like this: 2020-xx-xx [Updated: 2020-xx-xx] :: Author
+  # updatedDatePrefix = "Updated"
 
-  # Code colors
-  code_background_color = "#f3f6fa"
-  code_text_color = "#567482"
+  # set all headings to their default size (depending on browser settings)
+  # it's set to `true` by default
+  # oneHeadingSize = false
 
-  # Border colors
-  border_color = "#dce6f0"
-  table_border_color = "#e9ebec"
-  hr_border_color = "#eff0f1"
+[params.twitter]
+  # set Twitter handles for Twitter cards
+  # see https://developer.twitter.com/en/docs/tweets/optimize-with-cards/guides/getting-started#card-and-content-attribution
+  # do not include @
+  creator = ""
+  site = ""
 
-[menu]
-  [[menu.nav]]
-    name = "Home"
-    url = "/"
-    weight = 1
-  [[menu.nav]]
-    name = "About"
-    url = "/about/"
-    weight = 2
+
+[languages]
+  [languages.en]
+    languageName = "English"
+    title = "Joshua Sorah"
+    subtitle = ""
+    owner = ""
+    keywords = ""
+    copyright = ""
+    menuMore = "Show more"
+    readMore = "Read more"
+    readOtherPosts = "Read other posts"
+    newerPosts = "Newer posts"
+    olderPosts = "Older posts"
+    missingContentMessage = "Page not found..."
+    missingBackButtonLabel = "Back to home page"
+
+    [languages.en.params.logo]
+      logoText = "Joshua Sorah"
+      logoHomeLink = "/"
+
+    [languages.en.menu]
+      [[languages.en.menu.main]]
+        identifier = "about"
+        name = "About"
+        url = "/about"
+     [[languages.en.menu.main]]
+        identifier = "handy-utilities"
+        name = "Handy Utilities"
+        url = "/posts/handy-utilities"

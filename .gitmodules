@@ -1,4 +1,4 @@
 [submodule "themes/terminal"]
 	path = themes/terminal
 	url = https://github.com/jsorah/hugo-theme-terminal.git
-    branch = feature/mermaid-js
+	branch = feature/mermaid-js

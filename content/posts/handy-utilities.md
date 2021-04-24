@@ -1,6 +1,6 @@
 ---
 title: "Handy Utilities"
-date: "2021-03-23"
+date: "2021-04-24"
 description: "Things I find useful for development work."
 ---
 
@@ -12,6 +12,9 @@ description: "Things I find useful for development work."
   * [rofi](https://github.com/davatorium/rofi)
   * tmux
   * vim
+  * Gnome
+    * [material-shell](https://material-shell.com)
+  * [sakura](https://github.com/dabisu/sakura)
 * Windows
   * [Scoop](https://scoop.sh)
   * WSL 2
@@ -55,3 +58,8 @@ description: "Things I find useful for development work."
   * nvm
 * [Golang](https://golang.org)
 
+-----
+
+# Other Stuff
+* [dive](https://github.com/wagoodman/dive)
+* [radare2](https://www.radare.org)

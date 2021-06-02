@@ -13,7 +13,8 @@ description: "Things I find useful for development work."
   * tmux
   * vim
   * Gnome
-    * [material-shell](https://material-shell.com)
+    * [gTile](https://github.com/gTile/gTile)
+    * [unite](https://github.com/hardpixel/unite-shell)
   * [sakura](https://github.com/dabisu/sakura)
 * Windows
   * [Scoop](https://scoop.sh)

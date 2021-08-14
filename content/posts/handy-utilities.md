@@ -1,7 +1,8 @@
---- title: "Handy Utilities"
-date: "2021-04-24"
-description: "Things I find useful for development work."
----
++++ 
+title = "Handy Utilities"
+date = "2021-08-14"
+description = "Things I find useful for development work."
++++
 
 # OS
 

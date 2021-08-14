@@ -1,5 +1,4 @@
----
-title: "Handy Utilities"
+--- title: "Handy Utilities"
 date: "2021-04-24"
 description: "Things I find useful for development work."
 ---
@@ -63,4 +62,5 @@ description: "Things I find useful for development work."
 
 # Other Stuff
 * [dive](https://github.com/wagoodman/dive)
+* [fzf](https://github.com/junegunn/fzf)
 * [radare2](https://www.radare.org)

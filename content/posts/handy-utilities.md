@@ -7,9 +7,10 @@ description = "Things I find useful for development work."
 # OS
 
 * Linux (personally - Arch, Fedora, Ubuntu)
-  * [i3wm](https://i3wm.org)
-  * [polybar](https://polybar.github.io)
-  * [rofi](https://github.com/davatorium/rofi)
+  * Tiled WM Stuff
+    * [i3wm](https://i3wm.org)
+    * [polybar](https://polybar.github.io)
+    * [rofi](https://github.com/davatorium/rofi)
   * tmux
   * vim
   * Gnome

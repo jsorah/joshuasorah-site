@@ -13,6 +13,9 @@ description = "Things I find useful for development work."
     * [rofi](https://github.com/davatorium/rofi)
   * tmux
   * vim
+    * [vim-plug](https://github.com/junegunn/vim-plug)
+    * [NERDTree](https://github.com/preservim/nerdtree)
+    * [vim-airline](https://github.com/vim-airline/vim-airline)
   * Gnome
     * [gTile](https://github.com/gTile/gTile)
     * [unite](https://github.com/hardpixel/unite-shell)

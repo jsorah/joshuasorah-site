@@ -23,7 +23,6 @@ description = "Things I find useful for development work."
 * Windows
   * [Scoop](https://scoop.sh)
   * WSL 2
-  * Docker for Windows
 
 -----
 
@@ -69,3 +68,4 @@ description = "Things I find useful for development work."
 * [dive](https://github.com/wagoodman/dive)
 * [fzf](https://github.com/junegunn/fzf)
 * [radare2](https://www.radare.org)
+* [minikube](https://minikube.sigs.k8s.io/)

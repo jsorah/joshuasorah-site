@@ -69,3 +69,5 @@ description = "Things I find useful for development work."
 * [fzf](https://github.com/junegunn/fzf)
 * [radare2](https://www.radare.org)
 * [minikube](https://minikube.sigs.k8s.io/)
+* [k9s](https://github.com/derailed/k9s)
+* [bat](https://github.com/sharkdp/bat)

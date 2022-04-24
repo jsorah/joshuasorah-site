@@ -1,6 +1,6 @@
 +++ 
 title = "Handy Utilities"
-date = "2021-08-14"
+date = "2022-04-24"
 description = "Things I find useful for development work."
 +++
 
@@ -31,6 +31,7 @@ description = "Things I find useful for development work."
 * [Postman](https://www.postman.com)
 * [HTTPie](https://httpie.org)
 * [cURL](https://curl.haxx.se)
+* [jarg](https://github.com/jdp/jarg)
 * [jq](https:/stedolan.github.io/jq/)
 
 -----
@@ -62,12 +63,24 @@ description = "Things I find useful for development work."
   * nvm
 * [Golang](https://golang.org)
 
+----
+
+# Reverse Engineering Tools
+
+* [dive](https://github.com/wagoodman/dive)
+  * Inspect docker image layers.
+* [ImHex](https://github.com/werwolv/imhex)
+  * A nice little hex-editor.
+* [radare2](https://www.radare.org)
+
 -----
 
 # Other Stuff
-* [dive](https://github.com/wagoodman/dive)
+
 * [fzf](https://github.com/junegunn/fzf)
-* [radare2](https://www.radare.org)
 * [minikube](https://minikube.sigs.k8s.io/)
 * [k9s](https://github.com/derailed/k9s)
+  * CLI UI for Kubernetes (can be used with OpenShift)
 * [bat](https://github.com/sharkdp/bat)
+  * `cat` but with wings.
+* [yq](https://github.com/mikefarah/yq)

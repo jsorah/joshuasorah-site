@@ -31,7 +31,7 @@ description = "Things I find useful for development work."
 * [Postman](https://www.postman.com)
   * Honestly I don't use this as much any more.
 * [HTTPie](https://httpie.org)
-  * `pip install http`
+  * `pip install httpie`
 * [cURL](https://curl.haxx.se)
 * [jarg](https://github.com/jdp/jarg)
   * `pip install jarg`

@@ -29,9 +29,12 @@ description = "Things I find useful for development work."
 # HTTP
 
 * [Postman](https://www.postman.com)
+  * Honestly I don't use this as much any more.
 * [HTTPie](https://httpie.org)
+  * `pip install http`
 * [cURL](https://curl.haxx.se)
 * [jarg](https://github.com/jdp/jarg)
+  * `pip install jarg`
 * [jq](https:/stedolan.github.io/jq/)
 
 -----
@@ -69,8 +72,10 @@ description = "Things I find useful for development work."
 
 * [dive](https://github.com/wagoodman/dive)
   * Inspect docker image layers.
+  * Clone repo and build with Go
 * [ImHex](https://github.com/werwolv/imhex)
   * A nice little hex-editor.
+  * Clone repo and build, cmake + g++ and some other stuff.
 * [radare2](https://www.radare.org)
 
 -----
@@ -83,4 +88,5 @@ description = "Things I find useful for development work."
   * CLI UI for Kubernetes (can be used with OpenShift)
 * [bat](https://github.com/sharkdp/bat)
   * `cat` but with wings.
+  * Clone repo and install - need `cargo`
 * [yq](https://github.com/mikefarah/yq)

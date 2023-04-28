@@ -1,6 +1,6 @@
 +++ 
 title = "Handy Utilities"
-date = "2022-04-24"
+date = "2023-04-28"
 description = "Things I find useful for development work."
 +++
 
@@ -76,7 +76,7 @@ description = "Things I find useful for development work."
 * [ImHex](https://github.com/werwolv/imhex)
   * A nice little hex-editor.
   * Clone repo and build, cmake + g++ and some other stuff.
-* [radare2](https://www.radare.org)
+* [Cutter](https://cutter.re)
 
 -----
 
@@ -90,3 +90,5 @@ description = "Things I find useful for development work."
   * `cat` but with wings.
   * Clone repo and install - need `cargo`
 * [yq](https://github.com/mikefarah/yq)
+* [obsidian.md](https://obsidian.md)
+  * Note taking application.

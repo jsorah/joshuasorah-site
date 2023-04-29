@@ -108,7 +108,7 @@ Keep this value _secret_.
 
 ### Creating the secret for storing our runner registration token
 
-```yaml
+{{< code language="yaml" title="gitlab-runner-secret.yml" >}}
 apiVersion: v1
 kind: Secret
 metadata:
@@ -116,14 +116,15 @@ metadata:
 type: Opaque
 stringData:
   runner-registration-token: 1234
-```
+{{< /code >}}
+
 
 ```bash
 oc apply -f gitlab-runner-secret.yml
 ```
 ### Adding the CRD 
 
-```yaml
+{{< code language="yaml" title="gitlab-runner.yml" >}}
 apiVersion: apps.gitlab.com/v1beta2
 kind: Runner
 metadata:
@@ -133,7 +134,8 @@ spec:
   buildImage: alpine
   token: gitlab-runner-secret
   tags: openshift
-```
+{{< /code >}}
+
 
 `token` - this should reference the name of the secret we created in the previous step
 
@@ -163,7 +165,7 @@ gitlab-runner-runner-7b5bb6b7cc-8vzqg   1/1     Running            11 (70m ago) 
 
 Now, in our GitLab repository where we have done all of this work, we can create a `.gitlab-ci.yml` file containing a tag to force execution on our specific runner.
 
-```yaml
+{{< code language="yaml" title=".gitlab-ci.yml" >}}
 default:
   tags:
     - openshift
@@ -208,7 +210,7 @@ deploy:
 
 after_script:
   - echo "End CI"
-```
+{{< /code >}}
 
 You should be able to trigger a pipeline run.  For my example, simply commiting to your default branch should do the trick.  It doesn't really matter if this actually executes, you should still be able to see the pod attempt to start and that it went to your local OpenShift cluster.
 

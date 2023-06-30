@@ -12,6 +12,7 @@ description = "Things I find useful for development work."
     * [polybar](https://polybar.github.io)
     * [rofi](https://github.com/davatorium/rofi)
   * tmux
+  * [starship](https://starship.rs)
   * vim
     * [vim-plug](https://github.com/junegunn/vim-plug)
     * [NERDTree](https://github.com/preservim/nerdtree)
@@ -19,7 +20,7 @@ description = "Things I find useful for development work."
   * Gnome
     * [gTile](https://github.com/gTile/gTile)
     * [unite](https://github.com/hardpixel/unite-shell)
-  * [sakura](https://github.com/dabisu/sakura)
+  * [alacritty](https://github.com/alacritty/alacritty)
 * Windows
   * [Scoop](https://scoop.sh)
   * WSL 2

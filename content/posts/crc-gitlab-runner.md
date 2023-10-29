@@ -120,9 +120,9 @@ stringData:
 {{< /code >}}
 
 
-```bash
+{{< code language="bash" >}}
 oc apply -f gitlab-runner-secret.yml
-```
+{{< /code >}}
 ### Adding the CRD 
 
 {{< code language="yaml" title="gitlab-runner.yml" >}}
@@ -144,16 +144,18 @@ spec:
 
 And then apply the template.
 
-```bash
+{{< code language="bash" >}}
 oc apply -f gitlab-runner.yml
-```
+{{< /code >}}
 
 ### Validate the Pod Spins up and GitLab now sees it registered.
 
 You should now be able to execute
-```bash
+
+{{< code language="bash" >}}
 oc get pods
-```
+{{< /code >}}
+
 
 and see a runner instance being spun up for you.
 
@@ -230,16 +232,16 @@ For this example, I chose "read" and "write" for the container registry under my
 
 We can see what the secret would look like in plain text by using the follow command: 
 
-```bash
+{{< code language="bash" >}}
 oc create secret docker-registry gitlab-container-registry-secret \
   --docker-username=${YOUR_GITLAB_USERNAME} \
   --docker-password=${YOUR_PERSONAL_ACCESS_TOKEN} \
   --docker-server=registry.gitlab.com -o yaml \ 
   --dry-run=client
-```
+{{< /code >}}
 
 The output should resemble something like the following:
-```yaml
+{{< code language="yaml">}}
 apiVersion: v1
 data:
   .dockerconfigjson: somebase64encodedstuffhere== 
@@ -248,7 +250,7 @@ metadata:
   creationTimestamp: null
   name: gitlab-container-registry-secret
 type: kubernetes.io/dockerconfigjson
-```
+{{< /code >}}
 
 Drop the `--dry-run=client` argument and it should create the secret on OpenShift for you.
 

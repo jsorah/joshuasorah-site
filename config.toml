@@ -16,6 +16,7 @@ pygmentsStyle = "pygments"
 
 [taxonomies]
   tag = "tags"
+  category = "categories"
 
 [permalinks]
   post = "/:filename/"
@@ -76,6 +77,7 @@ pygmentsStyle = "pygments"
     olderPosts = "Older posts"
     missingContentMessage = "Page not found..."
     missingBackButtonLabel = "Back to home page"
+    showMenuItems = 2
 
     [languages.en.params.logo]
       logoText = "Joshua Sorah"
@@ -86,7 +88,24 @@ pygmentsStyle = "pygments"
         identifier = "about"
         name = "About"
         url = "/about"
-     [[languages.en.menu.main]]
+        weight = 1
+      [[languages.en.menu.main]]
         identifier = "handy-utilities"
         name = "Handy Utilities"
         url = "/posts/handy-utilities"
+        weight = 5
+      [[languages.en.menu.main]]
+        identifier = "posts"
+        name = "All Posts"
+        url = "/posts"
+        weight = 99
+      [[languages.en.menu.main]]
+        identifier = "categories"
+        name = "Post Categories"
+        url = "/categories"
+        weight = 100
+      [[languages.en.menu.main]]
+        identifier = "tags"
+        name = "Post Tags"
+        url = "/tags"
+        weight = 101

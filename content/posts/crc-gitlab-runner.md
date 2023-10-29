@@ -3,6 +3,7 @@ title = "CodeReady Containers and GitLab Runners"
 date = "2022-04-16"
 description = "Configuring CodeReady Containers and GitLab Runners"
 mermaid = true
+categories = ["how-to"]
 +++
 
 # Background

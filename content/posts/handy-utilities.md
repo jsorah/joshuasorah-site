@@ -2,6 +2,7 @@
 title = "Handy Utilities"
 date = "2023-04-28"
 description = "Things I find useful for development work."
+categories = ["tech-scratch"]
 +++
 
 # OS

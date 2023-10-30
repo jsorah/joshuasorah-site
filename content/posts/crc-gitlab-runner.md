@@ -9,7 +9,7 @@ categories = ["how-to"]
 # Background
 _note_: I seem to have started this at some point, but I never finished it, but I feel there's some good stuff in here that might be helpful.
 
-So, I think it would be interesting to set up a "mock" CI/CD environment using local OpenShift (via [OpenShift Local](https://developers.redhat.com/products/openshift-local/overview))
+So, I think it would be interesting to set up a "mock" CI/CD environment using OpenShift Local](https://developers.redhat.com/products/openshift-local/overview)
 
 The goal, will be to configure GitLab CI/CD to use a runner deployed in my OpenShift instance using the Gitlab Runner Operator.  The CI/CD job will ultimately trigger a build and push of an image back to the GitLab container registry associated with one of my projects.
 
@@ -55,19 +55,19 @@ graph LR
 {{< /mermaid>}}
 
 # What do we need?
-  - CRC Installed and Configured
+  - OpenShift Local Installed and Configured
     - Also the "oc" tools package installed.
   - A [git client](https://git-scm.com/downloads)
   - A GitLab account and some repositories
     - Sign-up at [gitlab.com](https://gitlab.com)
   - Your preferred text editor
 
-## CRC Installed and Configured
+## OpenShift Local Installed and Configured
 Of all the pre-req steps, this is probably the more involved of them.  But don't fret! This is _fairly_ straightforward.  We just need to download OpenShift Local and follow the instructions.  [Install OpenShift on your laptop](https://developers.redhat.com/products/openshift-local/overview)
 
 The installation is some what heavy, as it will leverage VMs to spin up an OpenShift cluster and stack all the components on your machine.  The images are pretty large when unpacked, so make sure you have plenty of disk space allocated.
 
-Configuring the "oc" command is pretty straight forward as well.  Typically you just need to download the binary for your Operating System and architecture and put it somewhere on the path of your preferred terminal program.
+Configuring the "oc" command is straight forward as well.  Typically, you just need to download the binary for your Operating System and architecture and put it somewhere on the path of your preferred terminal program.
 
 
 # Alright, we've gotten it set up, now what?

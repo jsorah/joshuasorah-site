@@ -109,7 +109,7 @@ Keep this value _secret_.
 
 ### Creating the secret for storing our runner registration token
 
-{{< code language="yaml" title="gitlab-runner-secret.yml" >}}
+{{< code language="yaml" title="gitlab-runner-secret.yml" open="true" >}}
 apiVersion: v1
 kind: Secret
 metadata:
@@ -120,12 +120,12 @@ stringData:
 {{< /code >}}
 
 
-{{< code language="bash" >}}
+{{< code language="bash" open="true" >}}
 oc apply -f gitlab-runner-secret.yml
 {{< /code >}}
 ### Adding the CRD 
 
-{{< code language="yaml" title="gitlab-runner.yml" >}}
+{{< code language="yaml" title="gitlab-runner.yml" open="true" >}}
 apiVersion: apps.gitlab.com/v1beta2
 kind: Runner
 metadata:
@@ -144,7 +144,7 @@ spec:
 
 And then apply the template.
 
-{{< code language="bash" >}}
+{{< code language="bash" open="true" >}}
 oc apply -f gitlab-runner.yml
 {{< /code >}}
 
@@ -152,7 +152,7 @@ oc apply -f gitlab-runner.yml
 
 You should now be able to execute
 
-{{< code language="bash" >}}
+{{< code language="bash" open="true" >}}
 oc get pods
 {{< /code >}}
 
@@ -168,7 +168,7 @@ gitlab-runner-runner-7b5bb6b7cc-8vzqg   1/1     Running            11 (70m ago) 
 
 Now, in our GitLab repository where we have done all of this work, we can create a `.gitlab-ci.yml` file containing a tag to force execution on our specific runner.
 
-{{< code language="yaml" title=".gitlab-ci.yml" >}}
+{{< code language="yaml" title=".gitlab-ci.yml" open="true" >}}
 default:
   tags:
     - openshift
@@ -232,7 +232,7 @@ For this example, I chose "read" and "write" for the container registry under my
 
 We can see what the secret would look like in plain text by using the follow command: 
 
-{{< code language="bash" >}}
+{{< code language="bash" open="true" >}}
 oc create secret docker-registry gitlab-container-registry-secret \
   --docker-username=${YOUR_GITLAB_USERNAME} \
   --docker-password=${YOUR_PERSONAL_ACCESS_TOKEN} \
@@ -241,7 +241,7 @@ oc create secret docker-registry gitlab-container-registry-secret \
 {{< /code >}}
 
 The output should resemble something like the following:
-{{< code language="yaml">}}
+{{< code language="yaml" open="true" >}}
 apiVersion: v1
 data:
   .dockerconfigjson: somebase64encodedstuffhere== 

@@ -20,7 +20,6 @@ categories = ["tech-scratch"]
     * [vim-airline](https://github.com/vim-airline/vim-airline)
   * Gnome
     * [gTile](https://github.com/gTile/gTile)
-    * [unite](https://github.com/hardpixel/unite-shell)
   * [alacritty](https://github.com/alacritty/alacritty)
 * Windows
   * [Scoop](https://scoop.sh)

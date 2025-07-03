@@ -9,7 +9,7 @@ categories = ["how-to"]
 # Background
 _note_: I seem to have started this at some point, but I never finished it, but I feel there's some good stuff in here that might be helpful.
 
-So, I think it would be interesting to set up a "mock" CI/CD environment using OpenShift Local](https://developers.redhat.com/products/openshift-local/overview)
+So, I think it would be interesting to set up a "mock" CI/CD environment using [OpenShift Local](https://developers.redhat.com/products/openshift-local/overview)
 
 The goal, will be to configure GitLab CI/CD to use a runner deployed in my OpenShift instance using the Gitlab Runner Operator.  The CI/CD job will ultimately trigger a build and push of an image back to the GitLab container registry associated with one of my projects.
 

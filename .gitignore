@@ -80,3 +80,4 @@ dist
 # hugo
 public
 resources
+.hugo_build.lock

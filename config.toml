@@ -4,9 +4,6 @@ defaultContentLanguage = "en"
 title = "Joshua Sorah"
 theme = "terminal"
 
-# Google analytics
-googleAnalytics = "G-L8MZ8Z377J"
-
 # Disqus comments
 # disqusShortname = "yourdiscussshortname"
 
@@ -113,3 +110,6 @@ pygmentsStyle = "pygments"
         name = "Post Tags"
         url = "/tags"
         weight = 101
+
+[services.googleAnalytics]
+  id = "G-L8MZ8Z377J"

@@ -1,5 +1,5 @@
 baseURL = "https://www.joshuasorah.com"
-languageCode = "en-us"
+locale = "en-us"
 defaultContentLanguage = "en"
 title = "Joshua Sorah"
 theme = "terminal"
@@ -64,7 +64,7 @@ pygmentsStyle = "pygments"
 
 [languages]
   [languages.en]
-    languageName = "English"
+    label = "English"
     title = "Joshua Sorah"
     showMenuItems = 2
 

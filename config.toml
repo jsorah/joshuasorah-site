@@ -13,7 +13,6 @@ pygmentsStyle = "pygments"
 
 [taxonomies]
   tag = "tags"
-  category = "categories"
 
 [permalinks]
   post = "/:filename/"
@@ -105,16 +104,6 @@ pygmentsStyle = "pygments"
         name = "All Posts"
         url = "/posts"
         weight = 99
-      [[languages.en.menu.main]]
-        identifier = "categories"
-        name = "Post Categories"
-        url = "/categories"
-        weight = 100
-      [[languages.en.menu.main]]
-        identifier = "tags"
-        name = "Post Tags"
-        url = "/tags"
-        weight = 101
 
 [services.googleAnalytics]
   id = "G-L8MZ8Z377J"

@@ -3,7 +3,6 @@ title = "OpenShift Local and GitLab Runners"
 date = "2022-04-16"
 description = "Configuring OpenShift Local and GitLab Runners"
 mermaid = true
-categories = ["how-to"]
 tags = ["tech"]
 +++
 

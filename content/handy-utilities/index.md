@@ -9,13 +9,11 @@ description = "Things I find useful for development work."
 
 Tools I find useful for development work.
 
-[Desktop](#desktop) · [Terminal](#terminal) · [Editors](#editors) · [HTTP & Data](#http-data) · [Languages](#languages) · [Kubernetes](#kubernetes) · [Reverse Engineering](#reverse-engineering) · [Notes](#notes)
+[Desktop](#desktop) · [Terminal](#terminal) · [Editors](#editors) · [HTTP & APIs](#http-data) · [Data Formats](#data-formats) · [Authentication & Security](#authentication-security) · [Languages](#languages) · [Kubernetes](#kubernetes) · [Reverse Engineering](#reverse-engineering) · [Notes](#notes)
 
 ## Desktop
 
 ### Linux
-
-Personally: Arch, Fedora, Ubuntu.
 
 Tiled window manager tools: [i3wm](https://i3wm.org) · [polybar](https://polybar.github.io) · [rofi](https://github.com/davatorium/rofi)
 
@@ -47,7 +45,7 @@ Fuzzy finder for the command line.
 
 ### [bat](https://github.com/sharkdp/bat)
 
-`cat` but with wings. Clone the repo and install; requires `cargo`.
+`cat` but with wings.
 
 ## Editors
 
@@ -61,23 +59,17 @@ Really, their entire suite. Plugins: Rainbow Brackets · Key Promoter X
 
 ### [VS Code](https://code.visualstudio.com)
 
-## HTTP & Data {#http-data}
+## HTTP & APIs {#http-data}
 
 ### [HTTPie](https://httpie.org)
 
 Command-line HTTP client.
 
-```sh
-pip install httpie
-```
-
 ### [cURL](https://curl.haxx.se)
 
-### [jarg](https://github.com/jdp/jarg)
+## Data Formats
 
-```sh
-pip install jarg
-```
+### [jarg](https://github.com/jdp/jarg)
 
 ### [jq](https://jqlang.org/)
 
@@ -86,6 +78,16 @@ Tools for working with JSON.
 ### [yq](https://github.com/mikefarah/yq)
 
 Tools for working with YAML.
+
+## Authentication & Security {#authentication-security}
+
+### [oauth2c](https://github.com/SecureAuthCorp/oauth2c)
+
+Request OAuth 2.0 access tokens and test authorization flows from the command line.
+
+### [jwt-cli](https://github.com/mike-engel/jwt-cli)
+
+Encode and decode JSON Web Tokens from the command line.
 
 ### PKI / Keystores
 
@@ -115,15 +117,15 @@ Version manager: nvm
 
 CLI UI for Kubernetes; can also be used with OpenShift.
 
-## Reverse Engineering
-
 ### [dive](https://github.com/wagoodman/dive)
 
-Inspect Docker image layers. Clone the repo and build with Go.
+Inspect Docker image layers.
+
+## Reverse Engineering
 
 ### [ImHex](https://github.com/werwolv/imhex)
 
-A nice little hex editor. Clone the repo and build with CMake, g++, and other dependencies.
+A nice little hex editor.
 
 ### [Cutter](https://cutter.re)
 

@@ -1,3 +1,10 @@
+/* Opaque, bright syntax colors stay legible on the purple background. */
+.highlight {
+  --first-tone: #8be9b1;
+  --second-tone: #c4b5fd;
+  --comment: #b9b3ce;
+}
+
 /* Reveal the first keyboard stop without moving the page layout. */
 .skip-link {
   position: fixed;

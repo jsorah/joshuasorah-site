@@ -7,9 +7,9 @@ theme = "terminal"
 # Disqus comments
 # disqusShortname = "yourdiscussshortname"
 
-# Syntax highlighting
-pygmentsCodefences = true
-pygmentsStyle = "pygments"
+# Use the theme's syntax CSS instead of inline colors from a light palette.
+[markup.highlight]
+  noClasses = false
 
 [taxonomies]
   tag = "tags"

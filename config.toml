@@ -65,7 +65,7 @@ pygmentsStyle = "pygments"
     showMenuItems = 4
 
     [languages.en.params]
-      subtitle = ""
+      subtitle = "Joshua Sorah’s personal site: notes on software, useful tools, recipes, and whatever else catches my interest."
       owner = ""
       keywords = ""
       copyright = "2025"

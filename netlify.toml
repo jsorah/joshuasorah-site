@@ -1,6 +1,6 @@
 [build]
 publish = "public"
-command = "hugo --gc --minify"
+command = "hugo --gc --minify && python3 scripts/check-csp.py"
 
 [build.environment]
 HUGO_VERSION = "0.169.0"
@@ -10,7 +10,18 @@ HUGO_ENV = "production"
 HUGO_ENABLEGITINFO = "true"
 
 [context.deploy-preview]
-command = "hugo --gc --minify --buildFuture -b $DEPLOY_PRIME_URL"
+command = 'hugo --gc --minify --buildFuture -b "$DEPLOY_PRIME_URL" && python3 scripts/check-csp.py'
 
 [context.branch-deploy]
-command = "hugo --gc --minify -b $DEPLOY_PRIME_URL"
+command = 'hugo --gc --minify -b "$DEPLOY_PRIME_URL" && python3 scripts/check-csp.py'
+
+[[headers]]
+for = "/*"
+
+[headers.values]
+X-Content-Type-Options = "nosniff"
+X-Frame-Options = "DENY"
+Referrer-Policy = "strict-origin-when-cross-origin"
+# Hashes authorize only the generated Analytics and Mermaid inline scripts.
+# Inline styles are needed by syntax highlighting and Mermaid.
+Content-Security-Policy = "default-src 'none'; base-uri 'none'; object-src 'none'; frame-ancestors 'none'; form-action 'none'; script-src 'self' https://www.googletagmanager.com https://cdn.jsdelivr.net/npm/mermaid@12.2.0/ 'sha256-4r8BKiGNeR0VN4bwQbfytrdf3SilbS2ozzSWNPvRAKk=' 'sha256-l6xYpH1Gf7+HXCuE3tFq6KZ7yL/8qDfQfXCROklN+0Q='; script-src-attr 'none'; style-src 'self' 'unsafe-inline'; font-src 'self'; img-src 'self' data: https://www.googletagmanager.com https://*.google-analytics.com; connect-src 'self' https://www.googletagmanager.com https://*.google-analytics.com https://*.google.com; upgrade-insecure-requests"

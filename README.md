@@ -89,6 +89,12 @@ The theme loads a pinned Mermaid version only for enabled posts. After an upgrad
 
 Netlify uses `netlify.toml` to build the site and publish `public/`. Production, deploy previews, and branch deploys pin Hugo to 0.169.0. Keep these pins and the installation command above aligned when upgrading Hugo.
 
+Security headers are configured in `netlify.toml`. The Content Security Policy allows the site's local styles and fonts, Google Analytics (without advertising features), and pinned Mermaid modules. Fira Code is served by the theme; no external font stylesheet is needed. Inline JavaScript is authorized by SHA-256 hashes rather than `unsafe-inline`; inline CSS remains allowed for syntax highlighting and Mermaid. Framing the site and submitting forms are disabled.
+
+Deploy builds also run `python3 scripts/check-csp.py` (Python 3, standard library only). Run it after a local production build as well. If Hugo, Analytics settings, or Mermaid templates change an inline script, the check fails and prints its new hash. Review the generated script before updating its hash in `netlify.toml`; remove obsolete hashes. You can pass an alternate Hugo output directory as the first argument.
+
+After deployment, check the actual response headers and rerun [HTTP Observatory](https://developer.mozilla.org/en-US/observatory/analyze?host=www.joshuasorah.com). The target is at least 100 (A+); Google Analytics uses a changing external script that cannot be safely pinned with Subresource Integrity. Verify navigation, fonts, Analytics requests, and a Mermaid page in a browser. Local Hugo preview does not apply Netlify's response headers. HSTS remains managed by Netlify; this configuration does not opt the domain or its subdomains into HSTS preloading.
+
 ## Reference pages
 
 Handy Utilities and Recipes live outside `content/posts/` and use `type = "reference"`. They appear in navigation rather than the post feed. Update their `lastmod` front matter date (YYYY-MM-DD) when making substantive edits. Their `aliases` preserve redirects from the former post URLs.

@@ -6,3 +6,26 @@
     box-sizing: border-box;
   }
 }
+
+/* Compact reference directory, scoped to Handy Utilities. */
+.utilities .post-content h2 {
+  margin-top: 3rem;
+}
+.utilities .post-content h3 {
+  margin: 1.75rem 0 .4rem;
+  font-size: 1rem;
+}
+.utilities .post-content h3::before {
+  content: none;
+}
+.utilities .post-content h3 + p {
+  margin-top: .4rem;
+  color: var(--light-color, #b8b8b8);
+}
+.utilities .post-content p {
+  overflow-wrap: anywhere;
+}
+.utilities .post-content pre {
+  max-width: 100%;
+  overflow-x: auto;
+}

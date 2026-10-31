@@ -87,7 +87,7 @@ graph LR
 {{< /mermaid >}}
 ```
 
-The theme loads a pinned Mermaid version only for enabled posts. After an upgrade, verify diagrams in a browser; a successful Hugo build does not execute Mermaid.
+The site loads a pinned Mermaid version only for enabled pages. Site template overrides initialize Mermaid with `securityLevel: 'strict'`, which encodes HTML labels and disables click interactions. After an upgrade, verify diagrams in a browser; a successful Hugo build does not execute Mermaid. Changes to the initialization script also require updating its CSP hash in `netlify.toml`.
 
 ## Deployment
 

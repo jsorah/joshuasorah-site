@@ -1,8 +1,9 @@
 +++ 
 title = "Handy Utilities"
-date = "2023-04-28"
+lastmod = "2023-04-28"
+type = "reference"
+aliases = ["/posts/handy-utilities/"]
 description = "Things I find useful for development work."
-categories = ["tech-scratch"]
 +++
 
 # OS

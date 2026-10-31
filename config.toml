@@ -27,7 +27,7 @@ pygmentsStyle = "pygments"
   themeColor = "green"
 
   # if you set this to 0, only submenu trigger will be visible
-  showMenuItems = 3
+  showMenuItems = 4
 
   # show selector to switch language
   showLanguageSelector = false
@@ -63,7 +63,7 @@ pygmentsStyle = "pygments"
   [languages.en]
     label = "English"
     title = "Joshua Sorah"
-    showMenuItems = 2
+    showMenuItems = 4
 
     [languages.en.params]
       subtitle = ""
@@ -93,8 +93,13 @@ pygmentsStyle = "pygments"
       [[languages.en.menu.main]]
         identifier = "handy-utilities"
         name = "Handy Utilities"
-        url = "/posts/handy-utilities"
+        url = "/handy-utilities/"
         weight = 5
+      [[languages.en.menu.main]]
+        identifier = "recipes"
+        name = "Recipes"
+        url = "/recipes/"
+        weight = 6
       [[languages.en.menu.main]]
         identifier = "posts"
         name = "All Posts"

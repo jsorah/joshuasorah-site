@@ -19,11 +19,13 @@ hugo version
 
 Ensure your Go bin directory is on `PATH`. Go may download a newer toolchain when required.
 
-Start a local preview at http://localhost:1313:
+With `just` installed, start a local preview at http://localhost:1313:
 
 ```bash
-hugo server -D
+just
 ```
+
+`just serve` runs the same preview command, `hugo server -D`, including drafts.
 
 Build production output into `public/`:
 
@@ -66,3 +68,7 @@ The theme loads a pinned Mermaid version only for enabled posts. After an upgrad
 ## Deployment
 
 Netlify uses `netlify.toml` to build the site and publish `public/`. Production, deploy previews, and branch deploys pin Hugo to 0.169.0. Keep these pins and the installation command above aligned when upgrading Hugo.
+
+## Reference pages
+
+Handy Utilities and Recipes live outside `content/posts/` and use `type = "reference"`. They appear in navigation rather than the post feed. Update their `lastmod` front matter date (YYYY-MM-DD) when making substantive edits. Their `aliases` preserve redirects from the former post URLs.

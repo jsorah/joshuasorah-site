@@ -1,0 +1,8 @@
+/* Let mobile menu labels fit while keeping the dropdown within the viewport. */
+@media (max-width: 684px) {
+  .menu--mobile .menu__dropdown {
+    width: max-content;
+    max-width: calc(100vw - 40px);
+    box-sizing: border-box;
+  }
+}

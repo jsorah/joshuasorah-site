@@ -57,6 +57,10 @@ Commit and push the post and prepared image together for Netlify to publish them
 
 ## Theme maintenance
 
+Site-specific accessibility overrides live in `layouts/partials/`, `layouts/_default/baseof.html`, `layouts/_default/single.html`, `layouts/_default/_markup/render-heading.html`, and `assets/js/menu.js`, with styles in `static/style.css`. Compare these with the theme when upgrading. The reference page template uses the same heading render hook.
+
+To check keyboard navigation, use a narrow browser window and press Tab from a fresh page: “Skip to content” should appear, and Enter should focus the main content. Tab to Menu; Enter or Space should toggle it, Tab should reach its links, and Escape should close it and restore button focus. Tabbing out should close the dropdown; closed links should not receive focus. Heading links should appear when focused. With a screen reader, verify that Menu is announced as a button with its expanded/collapsed state and that the main landmark and descriptive heading links are available.
+
 `themes/terminal` is a Git submodule of [the theme fork](https://github.com/jsorah/hugo-theme-terminal). The fork’s `master` mirrors [upstream](https://github.com/panr/hugo-theme-terminal); `feature/mermaid-js` contains the customizations used by this site. `.gitmodules` tracks that branch, while the site commit pins an exact theme commit.
 
 To update the theme, work on `feature/mermaid-js`, merge the desired upstream changes, and preserve the Mermaid shortcode and conditional script loading. Build and inspect the site, then commit and push the theme changes **before** committing the updated submodule pointer in this repository. Publish the theme commit first so fresh site checkouts can retrieve it.

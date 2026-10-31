@@ -1,0 +1,10 @@
+<ul class="menu menu--desktop menu--language-selector">
+  <li><button type="button" class="menu__trigger" aria-expanded="false" aria-controls="language-menu-links">{{ .Language.Label }}&nbsp;▾</button></li>
+  <li>
+    <ul id="language-menu-links" class="menu__dropdown" hidden>
+      {{ range $.Site.Home.AllTranslations }}
+        <li><a href="{{ .Permalink }}">{{ .Language.Label }}</a></li>
+      {{ end }}
+    </ul>
+  </li>
+</ul>

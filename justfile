@@ -4,6 +4,10 @@ default: serve
 serve:
     hugo server -D
 
+# Create a post bundle, with images stored beside index.md.
+post slug:
+    hugo new content {{quote("posts/" + slug + "/index.md")}}
+
 # Resize and compress a photo for publishing.
 [no-cd]
 image source destination:

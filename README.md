@@ -37,6 +37,14 @@ Edit site settings in `config.toml` and content under `content/`. Google Analyti
 
 ## Images in posts
 
+Create a new post bundle from the repository or any of its subdirectories:
+
+```bash
+just post my-new-post
+```
+
+This creates `content/posts/my-new-post/index.md` with a title derived from the slug, the current date, and `draft = true`. Edit the generated front matter and content, and keep the post's images alongside `index.md`. Preview with `just serve`, then set `draft = false` when ready to publish.
+
 Install ImageMagick so the `magick` command is available. To prepare a photo for publishing, run:
 
 ```bash
